@@ -27,42 +27,42 @@
       "classic": {
         "name": "Classic",
         "description": "Mushrooms, cheese, ketchup",
-        "price": "5"
+        "price": "7"
       },
       "meaty": {
         "name": "Meaty",
         "description": "Ham, bacon, cheese, onions",
-        "price": "7"
+        "price": "9"
       },
       "veggie": {
         "name": "Vegetarian",
         "description": "Mushrooms, peppers, olives, cheese",
-        "price": "6"
+        "price": "8"
       },
       "bbq": {
         "name": "BBQ",
         "description": "Pulled pork, BBQ sauce, jalapeño, cheese",
-        "price": "8"
+        "price": "10"
       }
     },
     "side_items": {
       "fries": {
         "name": "French fries",
-        "price": "3"
+        "price": "5"
       },
       "onion_rings": {
         "name": "Onion rings",
-        "price": "3.50"
+        "price": "5.50"
       }
     },
     "drink_items": {
       "water": {
         "name": "Water",
-        "price": "1.50"
+        "price": "3.50"
       },
       "lemonade": {
         "name": "Homemade lemonade",
-        "price": "3"
+        "price": "5"
       }
     }
   },

@@ -2,15 +2,22 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export function Hero() {
   const t = useTranslations("hero");
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-charcoal overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_60%_40%,_rgba(212,136,58,0.12)_0%,_transparent_70%)]" />
-      <div className="absolute top-1/4 right-0 w-96 h-96 bg-amber/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber/3 rounded-full blur-2xl" />
+      <Image
+        src="/images/hero-bg.jpg"
+        alt=""
+        fill
+        className="object-cover opacity-40"
+        priority
+        sizes="100vw"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/60 to-charcoal/80" />
 
       <div className="relative z-10 text-center px-6 max-w-4xl">
         <motion.p
@@ -35,7 +42,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-cream/50 text-xl md:text-2xl mb-14 tracking-wide"
+          className="text-cream/60 text-xl md:text-2xl mb-14 tracking-wide"
         >
           {t("subheadline")}
         </motion.p>

@@ -27,42 +27,42 @@
       "classic": {
         "name": "Klasikinė",
         "description": "Grybai, sūris, kečupas",
-        "price": "5"
+        "price": "7"
       },
       "meaty": {
         "name": "Mėsinė",
         "description": "Kumpis, šoninė, sūris, svogūnai",
-        "price": "7"
+        "price": "9"
       },
       "veggie": {
         "name": "Vegetariška",
         "description": "Grybai, paprikos, alyvuogės, sūris",
-        "price": "6"
+        "price": "8"
       },
       "bbq": {
         "name": "BBQ",
         "description": "Traukta kiauliena, BBQ padažas, jalapeño, sūris",
-        "price": "8"
+        "price": "10"
       }
     },
     "side_items": {
       "fries": {
         "name": "Bulvytės fri",
-        "price": "3"
+        "price": "5"
       },
       "onion_rings": {
         "name": "Svogūnų žiedai",
-        "price": "3.50"
+        "price": "5.50"
       }
     },
     "drink_items": {
       "water": {
         "name": "Vanduo",
-        "price": "1.50"
+        "price": "3.50"
       },
       "lemonade": {
         "name": "Naminė limonadas",
-        "price": "3"
+        "price": "5"
       }
     }
   },
