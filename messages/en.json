@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "about": "About",
+    "menu": "Menu",
+    "locations": "Find us",
+    "rental": "Rental",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "Authentic Polish zapiekanki",
+    "subheadline": "Crispy. Hot. On wheels.",
+    "cta": "Our menu"
+  },
+  "about": {
+    "title": "About us",
+    "p1": "We are a three-partner team from Vilnius, bringing one of Poland's most beloved street food formats to Lithuania – zapiekanki.",
+    "p2": "A zapiekanka is a 30–50 cm open-faced hot sandwich on a crispy baguette, loaded with mushrooms, cheese, meats, vegetables, and sauces. Ready in 3–5 minutes, perfect for eating on the go.",
+    "p3": "Our professional oven ensures ideal crispness and speed, while our Kamado ceramic grill lets us offer unique grilled specials for events."
+  },
+  "menu": {
+    "title": "Menu",
+    "subtitle": "Every zapiekanka baked fresh to order",
+    "zapiekanki": "Zapiekanki",
+    "sides": "Sides",
+    "drinks": "Drinks",
+    "items": {
+      "classic": {
+        "name": "Classic",
+        "description": "Mushrooms, cheese, ketchup",
+        "price": "5"
+      },
+      "meaty": {
+        "name": "Meaty",
+        "description": "Ham, bacon, cheese, onions",
+        "price": "7"
+      },
+      "veggie": {
+        "name": "Vegetarian",
+        "description": "Mushrooms, peppers, olives, cheese",
+        "price": "6"
+      },
+      "bbq": {
+        "name": "BBQ",
+        "description": "Pulled pork, BBQ sauce, jalapeño, cheese",
+        "price": "8"
+      }
+    },
+    "side_items": {
+      "fries": {
+        "name": "French fries",
+        "price": "3"
+      },
+      "onion_rings": {
+        "name": "Onion rings",
+        "price": "3.50"
+      }
+    },
+    "drink_items": {
+      "water": {
+        "name": "Water",
+        "price": "1.50"
+      },
+      "lemonade": {
+        "name": "Homemade lemonade",
+        "price": "3"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "step1": {
+      "number": "01",
+      "title": "Find us",
+      "description": "Follow our socials to see today's location"
+    },
+    "step2": {
+      "number": "02",
+      "title": "Order",
+      "description": "Pick your favorite zapiekanka at the truck window"
+    },
+    "step3": {
+      "number": "03",
+      "title": "Enjoy",
+      "description": "Fresh, hot zapiekanka ready in 3–5 minutes"
+    }
+  },
+  "locations": {
+    "title": "Where to find us",
+    "subtitle": "Three channels – always where the people are",
+    "events": {
+      "title": "Events and festivals",
+      "description": "City celebrations, fairs, concerts, festivals – where the crowds are. We attend 15–20 events during summer season across Lithuania."
+    },
+    "offices": {
+      "title": "Business districts",
+      "description": "Lunchtime (11:00–14:00) we park near Vilnius office complexes. Fast, tasty, and cheaper than a restaurant."
+    },
+    "neighborhoods": {
+      "title": "Residential areas",
+      "description": "Evenings and weekends we come to Pilaitė, Fabijoniškės, Justiniškės, and Baltupiai. Great food right at your doorstep."
+    }
+  },
+  "rental": {
+    "title": "Truck rental",
+    "description": "A fully equipped food truck for your event – weddings, corporate parties, outdoor birthdays. We provide all necessary equipment and gear.",
+    "cta": "Inquire about rental"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Orders, events, rental – drop us a message",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "message": "Message",
+      "submit": "Send",
+      "success": "Message sent! We'll get back to you soon.",
+      "error": "Error sending. Please try again."
+    },
+    "info": {
+      "company": "MB Tepam kepam",
+      "code": "Company code: 307601191",
+      "address": "Titnago g. 7-232, LT-02300 Vilnius",
+      "phone": "+370 648 67147",
+      "email": "info@tepamkepam.lt"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

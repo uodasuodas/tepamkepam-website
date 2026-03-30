@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "about": "Apie mus",
+    "menu": "Meniu",
+    "locations": "Kur mus rasti",
+    "rental": "Nuoma",
+    "contact": "Kontaktai"
+  },
+  "hero": {
+    "headline": "Tikros lenkiškos zapiekankos",
+    "subheadline": "Traškios. Karštos. Ant ratų.",
+    "cta": "Mūsų meniu"
+  },
+  "about": {
+    "title": "Apie mus",
+    "p1": "Esame trijų partnerių komanda iš Vilniaus, atnešanti į Lietuvą vieną populiariausių Lenkijos gatvės maisto formatų – zapiekankas.",
+    "p2": "Zapiekanka – tai 30–50 cm ilgio atviras karštasis sumuštinis ant traškaus bagetinio batono su grybais, sūriu, mėsa, daržovėmis ir padažais. Paruošiamas per 3–5 minutes, patogus valgyti stovint ar einant.",
+    "p3": "Mūsų profesionali orkaitė užtikrina idealų traškumą ir greitį, o \u201eKamado\u201c keraminis grilis leidžia siūlyti išskirtinius grilio patiekalus specialiems renginiams."
+  },
+  "menu": {
+    "title": "Meniu",
+    "subtitle": "Kiekviena zapiekanka kepama šviežiai pagal užsakymą",
+    "zapiekanki": "Zapiekankos",
+    "sides": "Priedai",
+    "drinks": "Gėrimai",
+    "items": {
+      "classic": {
+        "name": "Klasikinė",
+        "description": "Grybai, sūris, kečupas",
+        "price": "5"
+      },
+      "meaty": {
+        "name": "Mėsinė",
+        "description": "Kumpis, šoninė, sūris, svogūnai",
+        "price": "7"
+      },
+      "veggie": {
+        "name": "Vegetariška",
+        "description": "Grybai, paprikos, alyvuogės, sūris",
+        "price": "6"
+      },
+      "bbq": {
+        "name": "BBQ",
+        "description": "Traukta kiauliena, BBQ padažas, jalapeño, sūris",
+        "price": "8"
+      }
+    },
+    "side_items": {
+      "fries": {
+        "name": "Bulvytės fri",
+        "price": "3"
+      },
+      "onion_rings": {
+        "name": "Svogūnų žiedai",
+        "price": "3.50"
+      }
+    },
+    "drink_items": {
+      "water": {
+        "name": "Vanduo",
+        "price": "1.50"
+      },
+      "lemonade": {
+        "name": "Naminė limonadas",
+        "price": "3"
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Kaip tai veikia",
+    "step1": {
+      "number": "01",
+      "title": "Rask mus",
+      "description": "Sek mūsų socialines paskyras ir sužinok šiandienos lokaciją"
+    },
+    "step2": {
+      "number": "02",
+      "title": "Užsisakyk",
+      "description": "Pasirink savo mėgstamiausią zapiekanką prie furgono langelio"
+    },
+    "step3": {
+      "number": "03",
+      "title": "Mėgaukis",
+      "description": "Šviežia, karšta zapiekanka paruošiama per 3–5 minutes"
+    }
+  },
+  "locations": {
+    "title": "Kur mus rasti",
+    "subtitle": "Trys kanalai – visada ten, kur žmonės",
+    "events": {
+      "title": "Renginiai ir festivaliai",
+      "description": "Miesto šventės, mugės, koncertai, festivaliai – čia didžiausias žmonių srautas. Vasaros sezonu dalyvaujame 15–20 renginių visoje Lietuvoje."
+    },
+    "offices": {
+      "title": "Verslo centrai",
+      "description": "Pietų metu (11:00–14:00) stovime prie Vilniaus biurų kompleksų. Greita, skanu ir pigiau nei restorane."
+    },
+    "neighborhoods": {
+      "title": "Gyvenamieji rajonai",
+      "description": "Vakarais ir savaitgaliais atvykstame į Pilaitę, Fabijoniškės, Justiniškes ir Baltupius. Maistas \u201eprie pat nam\u0173\u201c."
+    }
+  },
+  "rental": {
+    "title": "Furgono nuoma",
+    "description": "Pilnai įrengtas food truck jūsų renginiui – vestuvės, įmonių vakarėliai, gimtadieniai gamtoje. Aprūpiname visu reikiamu inventoriumi ir technika.",
+    "cta": "Susisiekti dėl nuomos"
+  },
+  "contact": {
+    "title": "Susisiekite",
+    "subtitle": "Užsakymai, renginiai, nuoma – parašykite mums",
+    "form": {
+      "name": "Vardas",
+      "email": "El. paštas",
+      "phone": "Telefonas (neprivaloma)",
+      "message": "Žinutė",
+      "submit": "Siųsti",
+      "success": "Žinutė išsiųsta! Susisieksime artimiausiu metu.",
+      "error": "Klaida siunčiant. Bandykite dar kartą."
+    },
+    "info": {
+      "company": "MB Tepam kepam",
+      "code": "Įmonės kodas: 307601191",
+      "address": "Titnago g. 7-232, LT-02300 Vilnius",
+      "phone": "+370 648 67147",
+      "email": "info@tepamkepam.lt"
+    }
+  },
+  "footer": {
+    "rights": "Visos teisės saugomos."
+  }
+}
