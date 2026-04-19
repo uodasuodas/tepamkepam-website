@@ -36,3 +36,11 @@ jobs:
           port: 21
           dangerous-clean-slate: false
           log-level: verbose
+
+      - name: Diagnostic FTP listing
+        run: |
+          sudo apt-get install -y lftp
+          echo "=== Listing FTP root and common paths ==="
+          lftp -u "${{ secrets.FTP_USERNAME }}","${{ secrets.FTP_PASSWORD }}" \
+            -e "set ssl:verify-certificate no; pwd; ls -la /; ls -la /public_html/ || true; ls -la /domains/ || true; ls -la /domains/tepamkepam.lt/public_html/ || true; bye" \
+            ftps://${{ secrets.FTP_SERVER }}
