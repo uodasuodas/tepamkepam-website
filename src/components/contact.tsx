@@ -4,6 +4,8 @@ import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
+const WEB3FORMS_ACCESS_KEY = "7b9096f9-47ae-4590-a2b9-7b99bc58e5d7";
+
 export function Contact() {
   const t = useTranslations("contact");
   const [status, setStatus] = useState<
@@ -13,17 +15,30 @@ export function Contact() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("sending");
-    const data = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const payload = {
+      access_key: WEB3FORMS_ACCESS_KEY,
+      subject: "Nauja žinutė iš tepamkepam.lt",
+      from_name: "tepamkepam.lt",
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
 
     try {
-      const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
+        body: JSON.stringify(payload),
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
       });
-      if (res.ok) {
+      const data = await res.json();
+      if (res.ok && data.success) {
         setStatus("success");
-        e.currentTarget.reset();
+        form.reset();
       } else {
         setStatus("error");
       }

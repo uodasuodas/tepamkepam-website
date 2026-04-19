@@ -61,7 +61,7 @@
         "price": "3.50"
       },
       "lemonade": {
-        "name": "Naminė limonadas",
+        "name": "Naminis limonadas",
         "price": "5"
       }
     }
@@ -97,12 +97,12 @@
     },
     "neighborhoods": {
       "title": "Gyvenamieji rajonai",
-      "description": "Vakarais ir savaitgaliais atvykstame į Pilaitę, Fabijoniškės, Justiniškes ir Baltupius. Maistas \u201eprie pat nam\u0173\u201c."
+      "description": "Vakarais ir savaitgaliais atvykstame į Pilaitę, Fabijoniškes, Justiniškes ir Baltupius. Maistas \u201eprie pat nam\u0173\u201c."
     }
   },
   "rental": {
-    "title": "Furgono nuoma",
-    "description": "Pilnai įrengtas food truck jūsų renginiui – vestuvės, įmonių vakarėliai, gimtadieniai gamtoje. Aprūpiname visu reikiamu inventoriumi ir technika.",
+    "title": "Maisto vagonėlio nuoma",
+    "description": "Pilnai įrengtas maisto vagonėlis jūsų renginiui – vestuvės, įmonių vakarėliai, gimtadieniai gamtoje. Aprūpiname visu reikiamu inventoriumi ir technika.",
     "cta": "Susisiekti dėl nuomos"
   },
   "contact": {
