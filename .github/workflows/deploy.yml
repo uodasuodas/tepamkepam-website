@@ -35,3 +35,4 @@ jobs:
           protocol: ftps
           port: 21
           dangerous-clean-slate: false
+          log-level: verbose
