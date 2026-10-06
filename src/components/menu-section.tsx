@@ -3,9 +3,14 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 
-const zapiekankaKeys = ["classic", "meaty", "veggie", "bbq"] as const;
-const sideKeys = ["fries", "onion_rings"] as const;
-const drinkKeys = ["water", "lemonade"] as const;
+const categories = [
+  { key: "zapiekanki", items: ["classic", "chorizo", "bacon", "mexican"] },
+  { key: "burgers", items: ["burger", "burger_fries"] },
+] as const;
+const extras = [
+  { key: "sides", group: "side_items", items: ["fries", "onion_rings"] },
+  { key: "drinks", group: "drink_items", items: ["water", "lemonade"] },
+] as const;
 
 const stagger = {
   hidden: {},
@@ -37,80 +42,77 @@ export function MenuSection() {
           <div className="w-16 h-0.5 bg-amber mx-auto mt-6" />
         </motion.div>
 
-        <div className="mb-16">
-          <h3 className="font-display text-2xl text-charcoal mb-8">
-            {t("zapiekanki")}
-          </h3>
-          <motion.div
-            variants={stagger}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
-            className="grid md:grid-cols-2 gap-6"
-          >
-            {zapiekankaKeys.map((key) => (
-              <motion.div
-                key={key}
-                variants={fadeUp}
-                className="bg-cream p-6 flex justify-between items-start hover:shadow-md transition-shadow"
-              >
-                <div>
-                  <h4 className="text-lg font-semibold text-charcoal mb-1">
-                    {t(`items.${key}.name`)}
-                  </h4>
-                  <p className="text-charcoal/50 text-sm">
-                    {t(`items.${key}.description`)}
+        {categories.map(({ key, items }) => (
+          <div key={key} className="mb-16">
+            <div className="flex flex-wrap items-baseline justify-between gap-2 mb-8">
+              <h3 className="font-display text-3xl text-charcoal">
+                {t(`categories.${key}.title`)}
+              </h3>
+              {t.has(`categories.${key}.note`) && (
+                <p className="text-charcoal/50 text-sm tracking-wide">
+                  {t(`categories.${key}.note`)}
+                </p>
+              )}
+            </div>
+            <motion.div
+              variants={stagger}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-50px" }}
+              className="grid md:grid-cols-2 gap-6"
+            >
+              {items.map((item) => (
+                <motion.article
+                  key={item}
+                  variants={fadeUp}
+                  className="bg-cream p-7 border-l-2 border-amber hover:shadow-lg transition-shadow"
+                >
+                  <div className="flex items-baseline gap-3 mb-3">
+                    <h4 className="font-display text-2xl text-charcoal">
+                      {t(`items.${item}.name`)}
+                    </h4>
+                    {t.has(`items.${item}.badge`) && (
+                      <span className="bg-charcoal text-amber-light text-[11px] uppercase tracking-widest px-2 py-0.5">
+                        {t(`items.${item}.badge`)}
+                      </span>
+                    )}
+                    <span className="flex-1 border-b border-dotted border-charcoal/20" />
+                    <span className="text-amber font-display text-2xl shrink-0">
+                      {t(`items.${item}.price`)}€
+                    </span>
+                  </div>
+                  <p className="text-charcoal/60 leading-relaxed">
+                    {t(`items.${item}.description`)}
                   </p>
-                </div>
-                <span className="text-amber font-display text-2xl ml-4 shrink-0">
-                  {t(`items.${key}.price`)}€
-                </span>
-              </motion.div>
-            ))}
-          </motion.div>
-        </div>
+                </motion.article>
+              ))}
+            </motion.div>
+          </div>
+        ))}
 
         <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <h3 className="font-display text-2xl text-charcoal mb-6">
-              {t("sides")}
-            </h3>
-            <div className="space-y-4">
-              {sideKeys.map((key) => (
-                <div
-                  key={key}
-                  className="flex justify-between items-center border-b border-charcoal/10 pb-3"
-                >
-                  <span className="text-charcoal">
-                    {t(`side_items.${key}.name`)}
-                  </span>
-                  <span className="text-amber font-display text-xl">
-                    {t(`side_items.${key}.price`)}€
-                  </span>
-                </div>
-              ))}
+          {extras.map(({ key, group, items }) => (
+            <div key={key}>
+              <h3 className="font-display text-2xl text-charcoal mb-6">
+                {t(key)}
+              </h3>
+              <div className="space-y-4">
+                {items.map((item) => (
+                  <div
+                    key={item}
+                    className="flex justify-between items-center border-b border-charcoal/10 pb-3"
+                  >
+                    <span className="text-charcoal">
+                      {t(`${group}.${item}.name`)}
+                    </span>
+                    <span className="text-amber font-display text-xl">
+                      {t(`${group}.${item}.price`)}€
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-          <div>
-            <h3 className="font-display text-2xl text-charcoal mb-6">
-              {t("drinks")}
-            </h3>
-            <div className="space-y-4">
-              {drinkKeys.map((key) => (
-                <div
-                  key={key}
-                  className="flex justify-between items-center border-b border-charcoal/10 pb-3"
-                >
-                  <span className="text-charcoal">
-                    {t(`drink_items.${key}.name`)}
-                  </span>
-                  <span className="text-amber font-display text-xl">
-                    {t(`drink_items.${key}.price`)}€
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

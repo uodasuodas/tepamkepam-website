@@ -3,6 +3,7 @@ import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { About } from "@/components/about";
 import { MenuSection } from "@/components/menu-section";
+import { Gallery } from "@/components/gallery";
 import { HowItWorks } from "@/components/how-it-works";
 import { Locations } from "@/components/locations";
 import { Rental } from "@/components/rental";
@@ -24,6 +25,7 @@ export default async function HomePage({
         <Hero />
         <About />
         <MenuSection />
+        <Gallery />
         <HowItWorks />
         <Locations />
         <Rental />

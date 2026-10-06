@@ -2,6 +2,7 @@
   "nav": {
     "about": "About",
     "menu": "Menu",
+    "gallery": "Gallery",
     "locations": "Find us",
     "rental": "Rental",
     "contact": "Contact"
@@ -19,30 +20,49 @@
   },
   "menu": {
     "title": "Menu",
-    "subtitle": "Every zapiekanka baked fresh to order",
-    "zapiekanki": "Zapiekanki",
+    "subtitle": "Every zapiekanka baked fresh to order on a crispy baguette",
+    "categories": {
+      "zapiekanki": {
+        "title": "Zapiekanki",
+        "note": "Sauces of your choice"
+      },
+      "burgers": {
+        "title": "Burgers"
+      }
+    },
     "sides": "Sides",
     "drinks": "Drinks",
     "items": {
       "classic": {
         "name": "Classic",
-        "description": "Mushrooms, cheese, ketchup",
-        "price": "7"
-      },
-      "meaty": {
-        "name": "Meaty",
-        "description": "Ham, bacon, cheese, onions",
-        "price": "9"
-      },
-      "veggie": {
-        "name": "Vegetarian",
-        "description": "Mushrooms, peppers, olives, cheese",
+        "description": "The Kraków original: fried mushrooms, mozzarella and crispy fried onions",
         "price": "8"
       },
-      "bbq": {
-        "name": "BBQ",
-        "description": "Pulled pork, BBQ sauce, jalapeño, cheese",
+      "chorizo": {
+        "name": "Chorizo",
+        "description": "Mushrooms, mozzarella, chorizo sausage, tomatoes, chives",
         "price": "10"
+      },
+      "bacon": {
+        "name": "Bacon",
+        "description": "Mushrooms, cheese, crispy bacon, caramelized onions",
+        "price": "10"
+      },
+      "mexican": {
+        "name": "Mexican",
+        "badge": "Spicy",
+        "description": "Mushrooms with spicy beef chili mince, sweet corn, cheddar and mozzarella, pickled jalapeños, topped with lime sour cream and chives",
+        "price": "10"
+      },
+      "burger": {
+        "name": "Beef burger",
+        "description": "Beef patty, cheddar, lettuce, tomato, pickles, pickled onions, our spicy Original sauce",
+        "price": "12"
+      },
+      "burger_fries": {
+        "name": "Burger with fries",
+        "description": "Beef burger with a portion of French fries",
+        "price": "15"
       }
     },
     "side_items": {
@@ -65,6 +85,12 @@
         "price": "5"
       }
     }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Hot out of the oven – straight from our truck",
+    "alt": "Tepam kepam zapiekanka",
+    "soon": "Photos coming soon"
   },
   "howItWorks": {
     "title": "How it works",

@@ -7,6 +7,7 @@ import { LanguageSwitcher } from "./language-switcher";
 const navLinks = [
   { href: "#about", key: "about" },
   { href: "#menu", key: "menu" },
+  { href: "#gallery", key: "gallery" },
   { href: "#locations", key: "locations" },
   { href: "#rental", key: "rental" },
   { href: "#contact", key: "contact" },

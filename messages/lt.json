@@ -2,6 +2,7 @@
   "nav": {
     "about": "Apie mus",
     "menu": "Meniu",
+    "gallery": "Galerija",
     "locations": "Kur mus rasti",
     "rental": "Nuoma",
     "contact": "Kontaktai"
@@ -15,34 +16,53 @@
     "title": "Apie mus",
     "p1": "Esame trijų partnerių komanda iš Vilniaus, atnešanti į Lietuvą vieną populiariausių Lenkijos gatvės maisto formatų – zapiekankas.",
     "p2": "Zapiekanka – tai 30–50 cm ilgio atviras karštasis sumuštinis ant traškaus bagetinio batono su grybais, sūriu, mėsa, daržovėmis ir padažais. Paruošiamas per 3–5 minutes, patogus valgyti stovint ar einant.",
-    "p3": "Mūsų profesionali orkaitė užtikrina idealų traškumą ir greitį, o \u201eKamado\u201c keraminis grilis leidžia siūlyti išskirtinius grilio patiekalus specialiems renginiams."
+    "p3": "Mūsų profesionali orkaitė užtikrina idealų traškumą ir greitį, o „Kamado“ keraminis grilis leidžia siūlyti išskirtinius grilio patiekalus specialiems renginiams."
   },
   "menu": {
     "title": "Meniu",
-    "subtitle": "Kiekviena zapiekanka kepama šviežiai pagal užsakymą",
-    "zapiekanki": "Zapiekankos",
+    "subtitle": "Kiekviena zapiekanka kepama šviežiai pagal užsakymą ant traškaus batono",
+    "categories": {
+      "zapiekanki": {
+        "title": "Zapiekankos",
+        "note": "Padažai – pasirinktinai"
+      },
+      "burgers": {
+        "title": "Burgeriai"
+      }
+    },
     "sides": "Priedai",
     "drinks": "Gėrimai",
     "items": {
       "classic": {
         "name": "Klasikinė",
-        "description": "Grybai, sūris, kečupas",
-        "price": "7"
-      },
-      "meaty": {
-        "name": "Mėsinė",
-        "description": "Kumpis, šoninė, sūris, svogūnai",
-        "price": "9"
-      },
-      "veggie": {
-        "name": "Vegetariška",
-        "description": "Grybai, paprikos, alyvuogės, sūris",
+        "description": "Krokuvos klasika: kepti pievagrybiai, mocarela ir traškūs skrudinti svogūnai",
         "price": "8"
       },
-      "bbq": {
-        "name": "BBQ",
-        "description": "Traukta kiauliena, BBQ padažas, jalapeño, sūris",
+      "chorizo": {
+        "name": "Chorizo",
+        "description": "Pievagrybiai, mocarela, chorizo dešra, pomidorai, svogūnų laiškai",
         "price": "10"
+      },
+      "bacon": {
+        "name": "Su šonine",
+        "description": "Pievagrybiai, sūris, traški šoninė, karamelizuoti svogūnai",
+        "price": "10"
+      },
+      "mexican": {
+        "name": "Meksikietiška",
+        "badge": "Aštri",
+        "description": "Pievagrybiai su aštriu jautienos čili faršu, kukurūzai, čederis ir mocarela, marinuoti jalapeño, ant viršaus grietinės ir laimo padažas bei svogūnų laiškai",
+        "price": "10"
+      },
+      "burger": {
+        "name": "Jautienos burgeris",
+        "description": "Jautiena, čederio sūris, salota, pomidoras, marinuoti agurkai ir svogūnai, pikantiškas mūsų „Original“ padažas",
+        "price": "12"
+      },
+      "burger_fries": {
+        "name": "Burgeris su bulvytėmis",
+        "description": "Jautienos burgeris ir porcija bulvyčių fri",
+        "price": "15"
       }
     },
     "side_items": {
@@ -65,6 +85,12 @@
         "price": "5"
       }
     }
+  },
+  "gallery": {
+    "title": "Galerija",
+    "subtitle": "Karšta iš orkaitės – tiesiai iš mūsų furgono",
+    "alt": "Tepam kepam zapiekanka",
+    "soon": "Nuotraukos jau greitai"
   },
   "howItWorks": {
     "title": "Kaip tai veikia",
@@ -97,7 +123,7 @@
     },
     "neighborhoods": {
       "title": "Gyvenamieji rajonai",
-      "description": "Vakarais ir savaitgaliais atvykstame į Pilaitę, Fabijoniškes, Justiniškes ir Baltupius. Maistas \u201eprie pat nam\u0173\u201c."
+      "description": "Vakarais ir savaitgaliais atvykstame į Pilaitę, Fabijoniškes, Justiniškes ir Baltupius. Maistas „prie pat namų“."
     }
   },
   "rental": {
