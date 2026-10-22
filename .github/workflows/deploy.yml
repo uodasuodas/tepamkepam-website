@@ -35,3 +35,5 @@ jobs:
           protocol: ftps
           port: 21
           dangerous-clean-slate: false
+          # fresh sync state: old one referenced files removed manually on the server
+          state-name: .ftp-deploy-sync-state-v2.json
